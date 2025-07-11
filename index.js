@@ -75,7 +75,8 @@ subDirs.map(dir => {
         const filePath = `${dirPath}/${fileName}`;
         if (isFile(filePath)) {
             // remove special characters from the file name
-            const newFileName = fileName.replace(/[^a-zA-Z0-9._-]/g, `${fileCount++}_${fileType}`);
+            const currFileExtension = fileName.split('.').pop();
+            const newFileName = `${fileCount <= 9 ? "0" : ""}${fileCount++}_${fileType}.${currFileExtension}`;
             const newFilePath = `${dirPath}/${newFileName}`;
 
             // rename the file if the name has changed
