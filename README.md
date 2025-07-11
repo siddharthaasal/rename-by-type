@@ -1,6 +1,5 @@
 <a id="readme-top"></a>
 
-<br />
 <div align="center">
 
 <h3 align="center">Rename By Type | Dump Folder Organizer</h3>
